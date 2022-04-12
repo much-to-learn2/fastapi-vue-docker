@@ -1,0 +1,9 @@
+services:
+  api:
+    build: ./api
+    image: mattapp-api
+  client:
+    build: ./client
+    image: mattapp-client
+    ports:
+      - "80:80"
